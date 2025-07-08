@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Output settings */
+    "outDir": "dist", 
+    // All compiled JS goes to dist/
+    "rootDir": "src", 
+    // All TypeScript source in src/
+    "sourceMap": true, 
+    // Generate source maps
+    "declaration": true, 
+    // Generate .d.ts files
+    "declarationMap": true, 
+    // Maps for d.ts
+
+    /* Language & Module */
+    "target": "ES2020", // Modern JS
+    "module": "CommonJS", 
+    // Node.js
+    "moduleResolution": "node", 
+    // Node resolution
+    "resolveJsonModule": true, 
+    // Allow importing JSON files
+    "esModuleInterop": true, 
+    // Interop w/ CommonJS modules
+    "allowSyntheticDefaultImports": true,
+
+    /* Type Checking */
+    "strict": true, 
+    // Enable all strict checks
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Quality of life */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true 
+      // Skip checking @types
+  },
+  "include": [ "src/**/*" ],
+  "exclude": [ "node_modules", "dist", "**/*.test.ts" ]
+}

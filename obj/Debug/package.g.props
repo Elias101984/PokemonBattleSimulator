@@ -13,16 +13,27 @@
     <PackageJsonKeywords Condition="$(PackageJsonKeywords) == ''">[]</PackageJsonKeywords>
     <PackageJsonAuthor Condition="$(PackageJsonAuthor) == ''"></PackageJsonAuthor>
     <PackageJsonLicense Condition="$(PackageJsonLicense) == ''">MIT</PackageJsonLicense>
-    <PackageJsonDependenciesExpress Condition="$(PackageJsonDependenciesExpress) == ''">^4.18.2</PackageJsonDependenciesExpress>
     <PackageJsonDependenciesBodyParser Condition="$(PackageJsonDependenciesBodyParser) == ''">^1.20.2</PackageJsonDependenciesBodyParser>
+    <PackageJsonDependenciesExpress Condition="$(PackageJsonDependenciesExpress) == ''">^4.18.2</PackageJsonDependenciesExpress>
     <PackageJsonDevdependenciesTypesExpress Condition="$(PackageJsonDevdependenciesTypesExpress) == ''">^4.17.21</PackageJsonDevdependenciesTypesExpress>
-    <PackageJsonDevdependenciesTypesJest Condition="$(PackageJsonDevdependenciesTypesJest) == ''">^29.5.2</PackageJsonDevdependenciesTypesJest>
+    <PackageJsonDevdependenciesTypesJest Condition="$(PackageJsonDevdependenciesTypesJest) == ''">^29.5.14</PackageJsonDevdependenciesTypesJest>
     <PackageJsonDevdependenciesTypesNode Condition="$(PackageJsonDevdependenciesTypesNode) == ''">^24.0.10</PackageJsonDevdependenciesTypesNode>
     <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^9.30.1</PackageJsonDevdependenciesEslint>
-    <PackageJsonDevdependenciesJest Condition="$(PackageJsonDevdependenciesJest) == ''">^29.6.1</PackageJsonDevdependenciesJest>
-    <PackageJsonDevdependenciesTsJest Condition="$(PackageJsonDevdependenciesTsJest) == ''">^29.1.0</PackageJsonDevdependenciesTsJest>
+    <PackageJsonDevdependenciesJest Condition="$(PackageJsonDevdependenciesJest) == ''">^29.7.0</PackageJsonDevdependenciesJest>
+    <PackageJsonDevdependenciesTsJest Condition="$(PackageJsonDevdependenciesTsJest) == ''">^29.4.0</PackageJsonDevdependenciesTsJest>
     <PackageJsonDevdependenciesTsNode Condition="$(PackageJsonDevdependenciesTsNode) == ''">^10.9.1</PackageJsonDevdependenciesTsNode>
     <PackageJsonDevdependenciesTsNodeDev Condition="$(PackageJsonDevdependenciesTsNodeDev) == ''">^2.0.0</PackageJsonDevdependenciesTsNodeDev>
     <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">^5.8.3</PackageJsonDevdependenciesTypescript>
+    <PackageJsonJestPreset Condition="$(PackageJsonJestPreset) == ''">ts-jest</PackageJsonJestPreset>
+    <PackageJsonJestTestenvironment Condition="$(PackageJsonJestTestenvironment) == ''">node</PackageJsonJestTestenvironment>
+    <PackageJsonJestRoots Condition="$(PackageJsonJestRoots) == ''">[
+  "\u003CrootDir\u003E/tests"
+]</PackageJsonJestRoots>
+    <PackageJsonJestModulefileextensions Condition="$(PackageJsonJestModulefileextensions) == ''">[
+  "ts",
+  "js",
+  "json",
+  "node"
+]</PackageJsonJestModulefileextensions>
   </PropertyGroup>
 </Project>

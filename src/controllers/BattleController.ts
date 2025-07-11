@@ -3,8 +3,16 @@ import { BattleService } from '../services/BattleService';
 import { Pokemon } from '../models/Pokemon';
 import rawPokedex from '../../pokedex.json';
 
-// Cast to expected type
-const pokedex = rawPokedex as { pokemon: Pokemon[] };
+//explicity map each Pokemon entry from JSON with default values for `hp`, `attack`,
+//and `defense type while keeping strict type checking enabled
+
+const pokedex = (rawPokedex as any).pokemon.map((p: any) => ({
+    name: p.name,
+    type: p.type,
+    hp: 100,
+    attack: 50,
+    defense: 50
+}));
 
 const battleService = new BattleService(pokedex.pokemon);
 
